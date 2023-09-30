@@ -1,0 +1,14 @@
+html{height:100%}
+body{height:100%;margin:0px;padding:0px}
+*{box-sizing: border-box}
+#container{width:50%;height:900px;float:left;position:relative;border:solid;}
+#information{float:left;position:relative;padding:25px;width:25%;}
+#info{float:left;position: relative;width: 100%;}
+#command{float:left;position:relative;margin:25px;background-color: azure}
+.fontSize{font-size:30px;}
+#status{background-color: white; color: white;float:right;position: absolute;right:5px;bottom:5px;width:25%}
+#code{background-color: purple;}
+.code{padding:2px 10px;position: relative;}
+#statusInfo{background-color: green; color: white;padding:2px;}
+table{ text-align: center;border-collapse: collapse; padding: 0;}
+table td {border: 1px solid;}

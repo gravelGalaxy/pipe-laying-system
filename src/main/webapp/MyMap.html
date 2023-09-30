@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--填写你自己的百度地图access key-->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=<填写你自己的access key>"></script>
+<body>
+    <div id="container"></div>
+    <br/>
+    <div id="command" class="fontSize">
+        <input type="radio" name="algorithmChoose" value="Kruscal" checked/>Kruscal
+        <input type="radio" name="algorithmChoose" value="Prim" />Prim
+        <br/>
+        动画延迟(ms)：
+        <input type="radio" name="animationSpeed" value="5000" checked />5000
+        <input type="radio" name="animationSpeed" value="1000" checked />1000
+        <input type="radio" name="animationSpeed" value="750"/>750
+        <input type="radio" name="animationSpeed" value="500"/>500
+        <input type="radio" name="animationSpeed" value="250"/>250
+        <input type="radio" name="animationSpeed" value="50"/>50
+        <br/>
+        <button id="autoShow" onclick="initStatus(); autoShowAnimation()">生成最小生成树</button>
+        <button id="next" onclick="stepByStep()">单步执行</button>
+        <button id="writeToFile" onclick="makeAdjMatrix();">写入文件</button>
+        <input type="file" id="fileInput"/>
+    </div>
+    <div id="information">
+        <span id="info">Hello!</span>
+    </div>
+    <div id="status">
+        <p id="statusInfo"></p>
+        <div id="code"></div>
+    </div>
+    <div id="errorInfo"></div>
+</body>
+
+<script type="text/javascript" src="animation.js"></script>
+<script type="text/javascript" src="status.js"></script>
+<script type="text/javascript" src="parameters.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="file.js"></script>
+<script type="text/javascript" src="makeAdjMatrix.js"></script>
+<script type="text/javascript" src="marker.js"></script>
+<script type="text/javascript" src="edges.js"></script>
+<script type="text/javascript" src="sort.js"></script>
+<script type="text/javascript" src="kruscal.js"></script>
+<script type="text/javascript" src="prim.js"></script>
+<script type="text/javascript" src="manager.js"></script>
+<script type="text/javascript">
+    mapInit();
+</script>
+</html>
+
+
